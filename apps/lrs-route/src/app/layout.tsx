@@ -4,7 +4,7 @@ import "./globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 
 storyblokInit({
-  accessToken: "CoKddvWo1GW1VD7eGQSBrgtt",
+  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_TOKEN,
   use: [apiPlugin]
 });
 
