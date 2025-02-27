@@ -4,9 +4,9 @@ export const Hero = (params: any) => {
   return (
     <section
     //   {...storyblokEditable(params.blok)}
-      className="container mx-auto px-4 w-full pt-32 pb-16"
+      className="ui-group ui-rounded-lg ui-border "
     >
-      <h1 className="text-center text-5xl md:text-7xl font-bold">
+      <h1 className="ui-mb-3 ui-text-2xl ui-font-semibold">
         Hero header
         {/* {params.blok.headline} */}
       </h1>

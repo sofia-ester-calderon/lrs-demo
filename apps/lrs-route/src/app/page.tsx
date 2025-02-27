@@ -27,9 +27,10 @@ const Home = async() => {
       </Head>
  
       <header>
-        <h1>
+        <h1 className="text-4xl mb-10 bg-red-100">
           { props ? props.name : 'My Site' }
         </h1>
+        <p className="bg-blue-100 text-3xl">TEXT</p>
       </header>
  
       <StoryblokStory story={props}/>

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "@repo/ui/styles.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 import { Hero } from "@repo/ui/Hero";
 import { landingPage } from "@repo/ui/landingPage";
-// import { landingPage } from "@/components/landingPage";
 
 storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_TOKEN,
