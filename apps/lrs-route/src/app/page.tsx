@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { getStoryblokApi, ISbStoriesParams } from "@storyblok/react/rsc"
+import { getStoryblokApi, ISbStoriesParams, StoryblokStory } from "@storyblok/react/rsc"
 
 const fetchHome = async() => {
   // home is the default slug for the homepage in Storyblok
@@ -32,9 +32,7 @@ const Home = async() => {
         </h1>
       </header>
  
-      <main>
-        
-      </main>
+      <StoryblokStory story={props}/>
     </div>
   )
 }
