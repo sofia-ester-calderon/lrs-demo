@@ -1,5 +1,6 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Hero = (params: any) => {
   return (
     <section
