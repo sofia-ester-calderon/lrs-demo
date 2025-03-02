@@ -1,9 +1,9 @@
-import { Hero } from "./components/Hero";
-import { landingPage } from "./components/landingPage";
+import { HeaderText } from "@repo/ui/headerText";
+import { landingPage } from "@repo/ui/landingPage";
 
 const components = {
     landing_page: landingPage,
-    hero: Hero
+    header_text: HeaderText
 }
 
 export default components;
