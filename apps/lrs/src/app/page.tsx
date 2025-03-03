@@ -10,7 +10,14 @@ const fetchHome = async() => {
   };
  
   const storyblokApi = getStoryblokApi();
-  const { data } = await storyblokApi.get(`cdn/stories/lrs-website/${slug}`, sbParams);
+  const { data } = await storyblokApi.get(`cdn/stories/lrs-website/${slug}`, 
+    sbParams,     
+    {
+    cache: 'no-store',
+    next: {
+      revalidate: 3600,
+    },
+  });
  
   return data.story
 }
