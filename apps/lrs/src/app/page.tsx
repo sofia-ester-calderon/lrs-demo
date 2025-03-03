@@ -1,6 +1,8 @@
 import Head from "next/head"
 import { getStoryblokApi, ISbStoriesParams, StoryblokStory } from "@storyblok/react/rsc"
 
+export const dynamic = 'force-dynamic';
+
 const fetchHome = async() => {
   const slug = "home";
  
